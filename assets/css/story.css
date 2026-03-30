@@ -1,0 +1,217 @@
+/* --- Overall Style? --- */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0a0a;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    color: #e0e0e0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Background  --- */
+.bgimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('../images/cut scene 2.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: -2;
+}
+
+/* --- NavBar --- */
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    background: #2a9916; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.nav-button:last-child {
+    border-right: none;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffbe30;
+}
+
+.nav-button.active {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 -3px 0 rgb(245, 44, 44);
+}
+
+/* --- Mainn --- */
+.content {
+    background-color: rgba(15, 15, 20, 0.95);
+    width: 85%;
+    max-width: 850px;
+    padding: 40px;
+    border-left: 4px solid #39FF14; 
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
+    margin: 60px 20px;
+}
+
+h1, h2 {
+    font-family: 'Orbitron', sans-serif; 
+    color: #F6BE00; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p {
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* --- CharacterStylee --- */
+.status-header {
+    color: #39FF14;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.section-divider {
+    height: 2px;
+    background: #39FF14;
+    margin: 30px 0;
+    opacity: 0.3;
+}
+
+.profile-wrapper {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.idle-sidebar {
+    border: 2px solid #39FF14;
+    background: #000;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(57, 255, 20, 0.2);
+}
+
+.idle-sidebar img {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.idle-label {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    color: #39FF14;
+    letter-spacing: 1px;
+}
+
+.main-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.character-details {
+    border: 1px solid rgba(57, 255, 20, 0.3);
+    background: rgba(20, 20, 20, 0.6);
+    padding: 25px;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.action-box {
+    border: 2px solid #39FF14;
+    background: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.action-box:hover {
+    transform: translateY(-5px);
+    border-color: #F6BE00;
+    box-shadow: 0px 5px 15px rgba(246, 190, 0, 0.3);
+}
+
+.action-box img {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.action-label {
+    margin-top: 8px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: #39FF14;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* --- Boss Variant Styles --- */
+.content.boss-archive {
+    border-left: 4px solid #FF1493; /* Deep Pink para sa Boss */
+    margin-top: 40px;
+}
+
+.boss-archive h1, .boss-archive .status-header, .boss-archive .idle-label, .boss-archive .action-label {
+    color: #FF1493;
+}
+
+.boss-archive .idle-sidebar, .boss-archive .action-box {
+    border-color: #FF1493;
+}
+
+.boss-archive .section-divider {
+    background: #FF1493;
+}
+
+.boss-archive .character-details {
+    border-color: rgba(255, 20, 147, 0.3);
+}
