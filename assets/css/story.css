@@ -279,3 +279,28 @@ p {
     border-color: #F6BE00; /* Pinanatili ang Yellow glow sa hover para sa consistency */
     box-shadow: 0px 5px 15px rgba(246, 190, 0, 0.3);
 }
+/* --- Echo-Stalker (Stalker Variant) --- */
+.content.stalker-archive {
+    border-left: 4px solid #4B0082; /* Indigo */
+    margin-top: 40px;
+}
+
+.stalker-archive h1, .stalker-archive .status-header, .stalker-archive .idle-label, .stalker-archive .action-label {
+    color: #9370DB; /* Medium Purple para mas madaling basahin */
+}
+
+.stalker-archive .idle-sidebar, .stalker-archive .action-box {
+    border-color: #4B0082;
+}
+
+.stalker-archive .section-divider {
+    background: #4B0082;
+}
+
+.stalker-archive .character-details {
+    border-color: rgba(75, 0, 130, 0.3);
+}
+
+.stalker-archive .character-details h2 {
+    color: #9370DB;
+}
