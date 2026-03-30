@@ -215,3 +215,67 @@ p {
 .boss-archive .character-details {
     border-color: rgba(255, 20, 147, 0.3);
 }
+/* --- Expectorator (Toxic Variant) --- */
+.content.toxic-archive {
+    border-left: 4px solid #ADFF2F; /* GreenYellow */
+    margin-top: 40px;
+}
+
+.toxic-archive h1, .toxic-archive .status-header, .toxic-archive .idle-label, .toxic-archive .action-label {
+    color: #ADFF2F;
+}
+
+.toxic-archive .idle-sidebar, .toxic-archive .action-box {
+    border-color: #ADFF2F;
+}
+
+.toxic-archive .section-divider {
+    background: #ADFF2F;
+}
+
+.toxic-archive .character-details {
+    border-color: rgba(173, 255, 47, 0.3);
+}
+/* --- Subject 003 (Beast Variant) - Same Layout, Different Color --- */
+.content.beast-archive {
+    border-left: 4px solid #FF4500; /* OrangeRed para sa Beast vibe */
+    margin-top: 40px;
+}
+
+.beast-archive h1 {
+    color: #FF4500;
+}
+
+.beast-archive .status-header {
+    color: #FF4500;
+}
+
+.beast-archive .idle-sidebar {
+    border: 2px solid #FF4500;
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.2);
+}
+
+.beast-archive .idle-label {
+    color: #FF4500;
+}
+
+.beast-archive .character-details {
+    border: 1px solid rgba(255, 69, 0, 0.3);
+}
+
+.beast-archive .character-details h2 {
+    color: #FF4500; /* Pinkish Orange variant ng Yellow accent */
+}
+
+.beast-archive .action-box {
+    border: 2px solid #FF4500;
+}
+
+.beast-archive .action-label {
+    color: #FF4500;
+}
+
+.beast-archive .action-box:hover {
+    border-color: #F6BE00; /* Pinanatili ang Yellow glow sa hover para sa consistency */
+    box-shadow: 0px 5px 15px rgba(246, 190, 0, 0.3);
+}
