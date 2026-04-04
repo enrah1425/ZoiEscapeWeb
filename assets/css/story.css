@@ -46,6 +46,8 @@ body {
     background: #2a9916; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    /* SINGIT: Slide down animation pagka-load */
+    animation: slideDownNav 0.8s ease-out forwards;
 }
 
 .nav-menu {
@@ -113,6 +115,8 @@ body {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9); 
     margin: 120px auto 60px auto;     
     color: white; 
+    /* SINGIT: Default animation */
+    animation: fadeInPage 1.2s ease-out forwards;
 }
 
 h1, h2 {
@@ -148,6 +152,8 @@ p {
     gap: 25px;
     margin-top: 30px;
     align-items: flex-start;
+    /* SINGIT: Animation para sa profile sections */
+    animation: fadeInPage 1.5s ease-out forwards;
 }
 
 .idle-sidebar {
@@ -157,6 +163,8 @@ p {
     width: 180px;
     text-align: center;
     box-shadow: 0px 0px 15px rgba(57, 255, 20, 0.2);
+    /* SINGIT: Subtle pulse effect para sa glitch-theme */
+    animation: borderPulse 3s infinite;
 }
 
 .idle-sidebar img {
@@ -230,14 +238,14 @@ p {
    ============================================================ */
 
 /* Stage 1: Neon Pink */
-.content.stage1 { border-left: 4px solid #FF1493; margin-top: 40px; }
+.content.stage1 { border-left: 4px solid #FF1493; margin-top: 40px; animation: fadeInPage 1.2s ease-out forwards; }
 .stage1 h1, .stage1 .status-header, .stage1 .idle-label, .stage1 .action-label { color: #FF1493; }
 .stage1 .idle-sidebar, .stage1 .action-box { border-color: #FF1493; }
 .stage1 .section-divider { background: #FF1493; }
 .stage1 .character-details { border-color: rgba(255, 20, 147, 0.3); }
 
 /* Stage 2: Orange-Red */
-.content.stage2 { border-left: 4px solid #FF4500; margin-top: 40px; }
+.content.stage2 { border-left: 4px solid #FF4500; margin-top: 40px; animation: fadeInPage 1.2s ease-out forwards; }
 .stage2 h1, .stage2 .status-header, .stage2 .idle-label, .stage2 .action-label, .stage2 .character-details h2 { color: #FF4500; }
 .stage2 .idle-sidebar, .stage2 .action-box { border: 2px solid #FF4500; }
 .stage2 .idle-sidebar { box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.2); }
@@ -245,34 +253,24 @@ p {
 .stage2 .character-details { border: 1px solid rgba(255, 69, 0, 0.3); }
 
 /* Stage 3: Green-Yellow */
-.content.stage3 { border-left: 4px solid #ADFF2F; margin-top: 40px; }
+.content.stage3 { border-left: 4px solid #ADFF2F; margin-top: 40px; animation: fadeInPage 1.2s ease-out forwards; }
 .stage3 h1, .stage3 .status-header, .stage3 .idle-label, .stage3 .action-label { color: #ADFF2F; }
 .stage3 .idle-sidebar, .stage3 .action-box { border-color: #ADFF2F; }
 .stage3 .section-divider { background: #ADFF2F; }
 .stage3 .character-details { border-color: rgba(173, 255, 47, 0.3); }
 
 /* Stage 4: Indigo/Purple */
-.content.stage4 { border-left: 4px solid #4B0082; margin-top: 40px; }
+.content.stage4 { border-left: 4px solid #4B0082; margin-top: 40px; animation: fadeInPage 1.2s ease-out forwards; }
 .stage4 h1, .stage4 .status-header, .stage4 .idle-label, .stage4 .action-label, .stage4 .character-details h2 { color: #9370DB; }
 .stage4 .idle-sidebar, .stage4 .action-box { border-color: #4B0082; }
 .stage4 .section-divider { background: #4B0082; }
 .stage4 .character-details { border-color: rgba(75, 0, 130, 0.3); }
 
 /* ============================================================
-   PAGE ANIMATIONS (FADE-IN)
+   KEYFRAMES & ANIMATION DEFINITIONS
    ============================================================ */
 
-/* Gamitin ang class na 'fade-in' sa main divs ng iyong HTML */
-.fade-in, 
-.content, 
-.mechanics-archive, 
-.content.stage1, 
-.content.stage2, 
-.content.stage3, 
-.content.stage4 {
-    animation: fadeInPage 1.2s ease-out forwards;
-}
-
+/* Main Page Fade-in */
 @keyframes fadeInPage {
     from { 
         opacity: 0; 
@@ -284,7 +282,19 @@ p {
     }
 }
 
-/* Para sa smooth load ng profile elements */
-.profile-wrapper {
-    animation: fadeInPage 1s ease-out;
+/* Nav Slide Down */
+@keyframes slideDownNav {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Subtle Border Pulse (Horror/Sci-fi effect) */
+@keyframes borderPulse {
+    0% { box-shadow: 0px 0px 15px rgba(57, 255, 20, 0.2); }
+    50% { box-shadow: 0px 0px 25px rgba(57, 255, 20, 0.5); }
+    100% { box-shadow: 0px 0px 15px rgba(57, 255, 20, 0.2); }
 }
