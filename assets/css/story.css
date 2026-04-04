@@ -27,21 +27,27 @@ body {
     opacity: 0.15;
     z-index: -2;
 }
-
-/* --- NavBar --- */
+body {
+    margin: 0;
+    padding: 0;
+}
+/* --- NavBar Container  --- */
 .nav-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #2a9916; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
-
 .nav-menu {
     display: flex;
     flex-direction: row;
-    background: #2a9916; 
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
     padding: 0;
     overflow: hidden;
 }
@@ -73,30 +79,28 @@ body {
     box-shadow: inset 0 -3px 0 rgb(245, 44, 44);
 }
 
-/* --- Mainn --- */
+/* --- Main Content --- */
 .content {
     background-color: rgba(15, 15, 20, 0.95);
     width: 85%;
     max-width: 850px;
     padding: 40px;
     border-left: 4px solid #39FF14; 
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
-    margin: 60px 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9); 
+    margin: 120px auto 60px auto;    
+    color: white; 
 }
-
 h1, h2 {
     font-family: 'Orbitron', sans-serif; 
     color: #F6BE00; 
     text-transform: uppercase;
     letter-spacing: 5px;
 }
-
 p {
     line-height: 1.8;
     text-align: justify;
     margin-bottom: 20px;
 }
-
 /* --- CharacterStylee --- */
 .status-header {
     color: #39FF14;
