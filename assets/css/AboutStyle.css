@@ -113,8 +113,10 @@ html {
     padding: 40px;
     border-left: 4px solid #39FF14;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
-    margin: 60px 20px;
+    margin: 120px 20px 60px 20px;
     z-index: 1;
+
+    animation: fadeInPage 1.2s ease-out forwards;
 }
 
 h1, h2 {
@@ -191,6 +193,7 @@ p {
     gap: 25px;
     margin-top: 30px;
     align-items: flex-start;
+    animation: fadeInPage 1.2s ease-out forwards;
 }
 .idle-sidebar {
     border: 2px solid #39FF14;
@@ -260,7 +263,7 @@ p {
 /* --- GameplayMechanics Pagee --- */
 .mechanics-archive {
     border-left: 4px solid #39FF14; 
-    margin: 100px 20px 60px 20px; 
+    margin: 120px 20px 60px 20px; 
     padding: 60px 40px;
     max-width: 950px;
     background: rgba(15, 15, 20, 0.95);
@@ -268,6 +271,7 @@ p {
     color: #e0e0e0;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
     z-index: 1;
+    animation: fadeInPage 1.2s ease-out forwards;
 }
 
 .status-header {
@@ -374,9 +378,10 @@ p {
     padding: 60px 40px;
     border-left: 4px solid #39FF14;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
-    margin: 100px auto 60px auto;
+    margin: 120px auto 60px auto;
     z-index: 1;
     position: relative;
+    animation: fadeInPage 1.2s ease-out forwards;
 }
 .status-header {
     font-family: 'Orbitron', sans-serif;
@@ -468,3 +473,91 @@ p {
 .stage-4 { border-color: rgba(147, 112, 219, 0.4); }
 .stage-4 .idle-sidebar { border-color: #9370DB; box-shadow: 0px 0px 15px rgba(147, 112, 219, 0.2); }
 .stage-4 .idle-label, .stage-4 h2 { color: #9370DB; }
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    animation: fadeInPage 1.2s ease-out forwards;
+}
+
+.media-item {
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid rgba(57, 255, 20, 0.3);
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.media-item img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+    image-rendering: auto; 
+    filter: grayscale(30%) brightness(0.8);
+    transition: all 0.5s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.media-item:hover {
+    transform: translateY(-10px);
+    border-color: #F6BE00;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.media-item:hover img {
+    filter: grayscale(0%) brightness(1.1);
+}
+
+.media-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: left;
+}
+
+.media-item:hover .media-overlay {
+    opacity: 1;
+}
+
+.file-id {
+    font-family: 'Orbitron', sans-serif;
+    color: #F6BE00;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-left: 2px solid #F6BE00;
+    padding-left: 10px;
+}
+
+
+.footer-simple p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center; 
+}
+
+/* page animation*/
+.fade-in {
+    animation: fadeInPage 1.2s ease-out forwards;
+}
+
+@keyframes fadeInPage {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
