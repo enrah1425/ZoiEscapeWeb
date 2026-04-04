@@ -194,113 +194,85 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-/* --- Boss Variant Styles --- */
-.content.boss-archive {
-    border-left: 4px solid #FF1493; /* Deep Pink para sa Boss */
+/* --- Boss Styles --- */
+/* --- Stage 1 Enemies and Boss */
+.content.stage1 {
+    border-left: 4px solid #FF1493; 
     margin-top: 40px;
 }
 
-.boss-archive h1, .boss-archive .status-header, .boss-archive .idle-label, .boss-archive .action-label {
+.stage1 h1, .stage1 .status-header, .stage1 .idle-label, .stage1 .action-label {
     color: #FF1493;
 }
 
-.boss-archive .idle-sidebar, .boss-archive .action-box {
+.stage1 .idle-sidebar, .stage1 .action-box {
     border-color: #FF1493;
 }
 
-.boss-archive .section-divider {
+.stage1 .section-divider {
     background: #FF1493;
 }
 
-.boss-archive .character-details {
+.stage1 .character-details {
     border-color: rgba(255, 20, 147, 0.3);
 }
-/* --- Expectorator (Toxic Variant) --- */
-.content.toxic-archive {
+/* --- Stage 2 Enemies and Boss --- */
+.content.stage2 {
+    border-left: 4px solid #FF4500; 
+    margin-top: 40px;
+}
+.stage2 h1, .stage2 .status-header, .stage2 .idle-label, .stage2 .action-label,.stage2 .character-details h2 {
+    color: #FF4500;
+}
+.stage2 .idle-sidebar, .stage2 .action-box {
+    border: 2px solid #FF4500;
+}
+.stage2 .idle-sidebar {
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.2);
+}
+.stage2 .section-divider {
+    background: #FF4500;
+}
+.stage2 .character-details {
+    border: 1px solid rgba(255, 69, 0, 0.3);
+}
+.stage2 .action-box:hover {
+    border-color: #F6BE00;
+    box-shadow: 0px 5px 15px rgba(246, 190, 0, 0.3);
+}
+/* --- Stage 3 Enemies and Boss --- */
+.content.stage3 {
     border-left: 4px solid #ADFF2F; /* GreenYellow */
     margin-top: 40px;
 }
-
-.toxic-archive h1, .toxic-archive .status-header, .toxic-archive .idle-label, .toxic-archive .action-label {
+.stage3 h1, .stage3 .status-header, .stage3 .idle-label, .stage3 .action-label {
     color: #ADFF2F;
 }
-
-.toxic-archive .idle-sidebar, .toxic-archive .action-box {
+.stage3 .idle-sidebar, .stage3 .action-box {
     border-color: #ADFF2F;
 }
-
-.toxic-archive .section-divider {
+.stage3 .section-divider {
     background: #ADFF2F;
 }
-
-.toxic-archive .character-details {
+.stage3 .character-details {
     border-color: rgba(173, 255, 47, 0.3);
 }
-/* --- Subject 003 (Beast Variant) - Same Layout, Different Color --- */
-.content.beast-archive {
-    border-left: 4px solid #FF4500; /* OrangeRed para sa Beast vibe */
+
+/* --- Stage 4 Enemies and Boss --- */
+.content.stage4 {
+    border-left: 4px solid #4B0082; 
     margin-top: 40px;
 }
-
-.beast-archive h1 {
-    color: #FF4500;
+.stage4 h1, .stage4 .status-header, .stage4 .idle-label, .stage4 .action-label,.stage4 .character-details h2 {
+    color: #9370DB; 
 }
-
-.beast-archive .status-header {
-    color: #FF4500;
-}
-
-.beast-archive .idle-sidebar {
-    border: 2px solid #FF4500;
-    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.2);
-}
-
-.beast-archive .idle-label {
-    color: #FF4500;
-}
-
-.beast-archive .character-details {
-    border: 1px solid rgba(255, 69, 0, 0.3);
-}
-
-.beast-archive .character-details h2 {
-    color: #FF4500; /* Pinkish Orange variant ng Yellow accent */
-}
-
-.beast-archive .action-box {
-    border: 2px solid #FF4500;
-}
-
-.beast-archive .action-label {
-    color: #FF4500;
-}
-
-.beast-archive .action-box:hover {
-    border-color: #F6BE00; /* Pinanatili ang Yellow glow sa hover para sa consistency */
-    box-shadow: 0px 5px 15px rgba(246, 190, 0, 0.3);
-}
-/* --- Echo-Stalker (Stalker Variant) --- */
-.content.stalker-archive {
-    border-left: 4px solid #4B0082; /* Indigo */
-    margin-top: 40px;
-}
-
-.stalker-archive h1, .stalker-archive .status-header, .stalker-archive .idle-label, .stalker-archive .action-label {
-    color: #9370DB; /* Medium Purple para mas madaling basahin */
-}
-
-.stalker-archive .idle-sidebar, .stalker-archive .action-box {
+.stage4 .idle-sidebar, 
+.stage4 .action-box {
     border-color: #4B0082;
 }
-
-.stalker-archive .section-divider {
+.stage4 .section-divider {
     background: #4B0082;
 }
-
-.stalker-archive .character-details {
+.stage4 .character-details {
     border-color: rgba(75, 0, 130, 0.3);
-}
-
-.stalker-archive .character-details h2 {
-    color: #9370DB;
 }
