@@ -561,3 +561,22 @@ p {
         transform: translateY(0); 
     }
 }
+
+.idle-sidebar img + img, 
+.action-box img + img {
+    display: none;
+}
+
+.media-item .src-github {
+    display: none !important;
+}
+
+.media-item .src-local {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.media-item {
+    position: relative;
+    overflow: hidden;
+}
