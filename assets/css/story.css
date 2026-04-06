@@ -1,6 +1,4 @@
-/* ============================================================
-   OVERALL STYLE & BACKGROUND
-   ============================================================ */
+/* --- OVERALL STYLE & BACKGROUND--- */
 html {
     scroll-behavior: smooth;
 }
@@ -32,9 +30,7 @@ body {
     z-index: -2;
 }
 
-/* ============================================================
-   NAVIGATION BAR
-   ============================================================ */
+
 .nav-container {
     width: 100%;
     display: flex;
@@ -46,7 +42,7 @@ body {
     background: #2a9916; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    /* SINGIT: Slide down animation pagka-load */
+   
     animation: slideDownNav 0.8s ease-out forwards;
 }
 
@@ -103,9 +99,7 @@ body {
     box-shadow: inset 0 -3px 0 rgb(245, 44, 44);
 }
 
-/* ============================================================
-   MAIN CONTENT & CHARACTER STYLE
-   ============================================================ */
+
 .content, .mechanics-archive {
     background-color: rgba(15, 15, 20, 0.95);
     width: 85%;
@@ -115,7 +109,7 @@ body {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9); 
     margin: 120px auto 60px auto;     
     color: white; 
-    /* SINGIT: Default animation */
+  
     animation: fadeInPage 1.2s ease-out forwards;
 }
 
@@ -152,7 +146,7 @@ p {
     gap: 25px;
     margin-top: 30px;
     align-items: flex-start;
-    /* SINGIT: Animation para sa profile sections */
+   
     animation: fadeInPage 1.5s ease-out forwards;
 }
 
@@ -163,7 +157,7 @@ p {
     width: 180px;
     text-align: center;
     box-shadow: 0px 0px 15px rgba(57, 255, 20, 0.2);
-    /* SINGIT: Subtle pulse effect para sa glitch-theme */
+  
     animation: borderPulse 3s infinite;
 }
 
@@ -233,10 +227,6 @@ p {
     letter-spacing: 1px;
 }
 
-/* ============================================================
-   BOSS & STAGE THEMES
-   ============================================================ */
-
 /* Stage 1: Neon Pink */
 .content.stage1 { border-left: 4px solid #FF1493; margin-top: 40px; animation: fadeInPage 1.2s ease-out forwards; }
 .stage1 h1, .stage1 .status-header, .stage1 .idle-label, .stage1 .action-label { color: #FF1493; }
@@ -266,11 +256,7 @@ p {
 .stage4 .section-divider { background: #4B0082; }
 .stage4 .character-details { border-color: rgba(75, 0, 130, 0.3); }
 
-/* ============================================================
-   KEYFRAMES & ANIMATION DEFINITIONS
-   ============================================================ */
 
-/* Main Page Fade-in */
 @keyframes fadeInPage {
     from { 
         opacity: 0; 

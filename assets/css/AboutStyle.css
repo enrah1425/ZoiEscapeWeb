@@ -546,7 +546,7 @@ p {
     text-align: center; 
 }
 
-/* page animation*/
+
 .fade-in {
     animation: fadeInPage 1.2s ease-out forwards;
 }

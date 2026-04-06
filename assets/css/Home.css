@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
     
-    /* Heto yung fix sa path */
+   
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/BG.gif");
     background-size: cover;
     background-position: center;
@@ -26,7 +26,7 @@ body {
     height: auto;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
 }
-/* Para sa smooth na pag-scroll pag clinick ang links */
+
 html {
     scroll-behavior: smooth;
 }
