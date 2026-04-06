@@ -14,12 +14,12 @@
         <img src="assets/images/title.png" alt="Zoi Escape Title">
     </div>
 
-    <nav class="nav-container">
+    <nav class="nav-container" id="navbar">
         <div class="nav-menu">
             <a href="index.html" class="nav-button active">Home</a>
-            <a href="about.html" class="nav-button">About the game</a>
+            <a href="about.html" class="nav-button">About</a>
             <a href="story.html" class="nav-button">Story</a>
-            <a href="gameplaymechanics.html" class="nav-button">Gameplay Mechanics</a>
+            <a href="gameplaymechanics.html" class="nav-button">Mechanics</a>
             <a href="characters.html" class="nav-button">Characters</a>
             <a href="environments.html" class="nav-button">Environments</a>
             <a href="media.html" class="nav-button">Media</a>
@@ -39,19 +39,20 @@
                 Will you survive the infection… or become part 
                 of the experiment?
             </p>
-        </div>
+
 
         <div class="video-section">
-            <video controls autoplay loop muted playsinline>
+            <video controls autoplay loop muted playsinline poster="assets/images/title.png">
                 <source src="assets/images/teaser_game_1.mp4" type="video/mp4" />
+                <source src="https://raw.githubusercontent.com/mthwXXVI/ZoiEscapeWeb/main/assets/images/teaser_game_1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
-    </div>
 
-     <footer class="footer-simple" style="text-align: center; padding: 20px; color: rgba(255,255,255,0.3); font-size: 0.8rem;">
-        <p>&copy; 2026 Zoi: Escape | Mechanics Documentation</p>
+    <footer style="text-align: center; padding: 40px; color: rgba(255,255,255,0.2); font-size: 0.7rem;">
+        <p>&copy; 2026 Zoi: Escape | All Rights Reserved</p>
     </footer>
 
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>
